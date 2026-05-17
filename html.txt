@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <style>
+        /* Estilos básicos para deixar a página com visual moderno */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #24292e;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: #a1a8b0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0366d6;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 0.3rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        @media (max-width: 600px) {
+            .project-grid { grid-template-columns: 1fr; }
+        }
+        .card {
+            border: 1px solid #e1e4e8;
+            padding: 1rem;
+            border-radius: 6px;
+            background-color: #fafbfc;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .links {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2ea44f;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 0 0.5rem;
+        }
+        .btn-linkedin {
+            background-color: #0077b5;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6a737d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Seu Nome Completo</h1>
+        <p>Estudante de Tecnologia & Desenvolvedor em Formação</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Boas-vindas ao meu portfólio de projetos! Este repositório foi desenvolvido como parte de um desafio de versionamento e colaboração utilizando Git e GitHub, com o objetivo de consolidar minha presença profissional na área de tecnologia.</p>
+        </section>
+
+        <section id="projetos-academicos">
+            <h2>Projetos Acadêmicos</h2>
+            <div class="project-grid">
+                <div class="card">
+                    <h3>Projeto Acadêmico 1</h3>
+                    <p>Descrição breve do projeto desenvolvido na faculdade/curso. Explique o problema que resolveu e as tecnologias usadas.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto Acadêmico 2</h3>
+                    <p>Descrição de outro trabalho relevante de disciplina, fábrica de software ou extensão universitária.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos-pessoais">
+            <h2>Projetos Pessoais</h2>
+            <div class="project-grid">
+                <div class="card">
+                    <h3>Projeto Pessoal 1</h3>
+                    <p>Um sistema, site ou script que você desenvolveu por conta própria para praticar seus estudos de programação.</p>
+                </div>
+                <div class="card">
+                    <h3>PortfolioHUB</h3>
+                    <p>Este próprio repositório organizado e configurado com boas práticas de versionamento Git.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="links">
+            <h2>Conecte-se Comigo</h2>
+            <a href="#" class="btn btn-linkedin" target="_blank">Meu LinkedIn</a>
+            <a href="#" class="btn" target="_blank">Meu GitHub</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para a Entrega Intermediária de Versionamento.</p>
+    </footer>
+
+</body>
+</html>
