@@ -4,112 +4,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PortfolioHUB</title>
+  <title>Portfólio - Aldair</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    body{
-      font-family: Arial, sans-serif;
-      background:#f4f4f4;
-      color:#333;
-      line-height:1.6;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4ede4;
+      color: #4e342e;
+      line-height: 1.6;
     }
 
-    header{
-      background:#0d6efd;
-      color:white;
-      padding:40px 20px;
-      text-align:center;
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #6d4c41, #a1887f, #d7ccc8);
+      color: white;
+      padding: 20px;
     }
 
-    header h1{
-      font-size:42px;
-      margin-bottom:10px;
+    .hero {
+      background: rgba(255,255,255,0.12);
+      padding: 50px;
+      border-radius: 25px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      max-width: 700px;
     }
 
-    header p{
-      font-size:18px;
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+      font-weight: 600;
     }
 
-    nav{
-      background:#222;
-      padding:15px;
-      text-align:center;
+    .hero p {
+      font-size: 20px;
+      font-weight: 300;
     }
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:0 15px;
-      font-weight:bold;
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 0;
     }
 
-    nav a:hover{
-      color:#0d6efd;
+    section {
+      margin-bottom: 50px;
+      background: #fff8f1;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     }
 
-    .container{
-      width:90%;
-      max-width:1200px;
-      margin:40px auto;
+    h2 {
+      color: #6d4c41;
+      margin-bottom: 20px;
+      font-size: 32px;
     }
 
-    section{
-      background:white;
-      margin-bottom:30px;
-      padding:30px;
-      border-radius:10px;
-      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    .sobre p {
+      margin-bottom: 15px;
+      font-size: 18px;
     }
 
-    section h2{
-      margin-bottom:20px;
-      color:#0d6efd;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
     }
 
-    .projetos{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-      gap:20px;
+    .card {
+      background: #efebe9;
+      padding: 25px;
+      border-radius: 20px;
+      transition: 0.3s ease;
+      border: 1px solid #d7ccc8;
     }
 
-    .card{
-      background:#f9f9f9;
-      padding:20px;
-      border-radius:10px;
-      border:1px solid #ddd;
-      transition:0.3s;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
 
-    .card:hover{
-      transform:scale(1.03);
+    .card h3 {
+      margin-bottom: 10px;
+      color: #5d4037;
     }
 
-    .card h3{
-      margin-bottom:10px;
+    .contato a {
+      color: #6d4c41;
+      text-decoration: none;
+      font-weight: 600;
     }
 
-    .card a{
-      display:inline-block;
-      margin-top:10px;
-      text-decoration:none;
-      color:white;
-      background:#0d6efd;
-      padding:10px 15px;
-      border-radius:5px;
+    .contato a:hover {
+      text-decoration: underline;
     }
 
-    footer{
-      background:#222;
-      color:white;
-      text-align:center;
-      padding:20px;
-      margin-top:40px;
+    footer {
+      background: #5d4037;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 25px;
+      }
     }
   </style>
 </head>
@@ -117,85 +141,76 @@
 <body>
 
   <header>
-    <h1>PortfolioHUB</h1>
-    <p>Projetos Acadêmicos e Pessoais</p>
+    <div class="hero">
+      <h1>Aldair Junior</h1>
+      <p>
+        Estudante apaixonado por tecnologia, desenvolvimento web e criação de projetos criativos.
+      </p>
+    </div>
   </header>
-
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
 
   <div class="container">
 
-    <section id="sobre">
+    <section class="sobre">
       <h2>Sobre Mim</h2>
 
       <p>
-        Olá! Meu nome é Aldair. Este repositório foi criado para armazenar
-        projetos acadêmicos e pessoais utilizando Git, GitHub e GitHub Pages.
+        Olá! Meu nome é Aldair e atualmente estou desenvolvendo minhas habilidades na área de tecnologia e programação.
       </p>
 
       <p>
-        O objetivo é desenvolver experiência com versionamento,
-        organização de projetos e compartilhamento profissional.
+        Este portfólio foi criado com o objetivo de apresentar meus estudos, projetos acadêmicos e experiências durante minha jornada de aprendizado.
+      </p>
+
+      <p>
+        Tenho interesse em desenvolvimento web, design moderno e criação de soluções criativas utilizando tecnologia.
       </p>
     </section>
 
-    <section id="projetos">
-      <h2>Meus Projetos</h2>
+    <section>
+      <h2>Projetos</h2>
 
-      <div class="projetos">
+      <div class="cards">
 
         <div class="card">
-          <h3>Projeto Página Web</h3>
-
+          <h3>Página Web</h3>
           <p>
-            Projeto desenvolvido utilizando HTML e CSS.
+            Desenvolvimento de uma página utilizando HTML e CSS com foco em design moderno.
           </p>
-
-          <a href="#">Visualizar</a>
         </div>
 
         <div class="card">
-          <h3>Projeto GitHub</h3>
-
+          <h3>Versionamento Git</h3>
           <p>
-            Repositório criado para estudo de versionamento com Git.
+            Organização e gerenciamento de projetos utilizando Git e GitHub.
           </p>
-
-          <a href="#">Visualizar</a>
         </div>
 
         <div class="card">
-          <h3>Projeto Acadêmico</h3>
-
+          <h3>Projetos Acadêmicos</h3>
           <p>
-            Trabalhos e atividades desenvolvidos durante o curso.
+            Trabalhos desenvolvidos durante as atividades acadêmicas e desafios propostos.
           </p>
-
-          <a href="#">Visualizar</a>
         </div>
 
       </div>
     </section>
 
-    <section id="contato">
+    <section class="contato">
       <h2>Contato</h2>
 
       <p>Email: seuemail@email.com</p>
 
       <p>
         GitHub:
-        <a href="https://github.com/" target="_blank">
+        <a href="https://github.com" target="_blank">
           github.com/seuusuario
         </a>
       </p>
 
       <p>
         LinkedIn:
-        <a href="https://linkedin.com/" target="_blank">
+        <a href="https://linkedin.com" target="_blank">
           linkedin.com/in/seuperfil
         </a>
       </p>
@@ -204,9 +219,10 @@
   </div>
 
   <footer>
-    <p>© 2026 - PortfolioHUB | Desenvolvido por Aldair</p>
+    <p>© 2026 • Portfólio de Aldair Junior</p>
   </footer>
 
 </body>
 </html>
 ```
+
