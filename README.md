@@ -1,4 +1,4 @@
-Olá, meu nome é Aldair José de Siqueira Júnior. Este repositório foi desenvolvido como parte da Entrega Intermediária do Bootcamp de Data Visualization, com o objetivo de consolidar e apresentar meus projetos acadêmicos e pessoais.
+Olá, meu nome é Aldair Jose de Siqueira Júnior. Este repositório foi desenvolvido como parte da Entrega Intermediária do Bootcamp de Data Visualization, com o objetivo de consolidar e apresentar meus projetos acadêmicos e pessoais.
 # Portfólio de Data Visualization (DV Bootcamp)
 
 ---
